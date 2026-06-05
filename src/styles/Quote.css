@@ -1,0 +1,175 @@
+.quote-page{
+  background:#f7f9fc;
+  padding:60px 8%;
+}
+
+.breadcrumb{
+  color:#64748b;
+  margin-bottom:30px;
+}
+
+.quote-header{
+  text-align:center;
+  margin-bottom:50px;
+}
+
+.quote-header h1{
+  font-size:52px;
+  color:#0f172a;
+  margin-bottom:15px;
+}
+
+.quote-header p{
+  color:#64748b;
+  max-width:500px;
+  margin:auto;
+  line-height:1.8;
+}
+
+.quote-form{
+  background:#fff;
+  padding:35px;
+  border-radius:20px;
+  box-shadow:0 5px 25px rgba(0,0,0,.05);
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+}
+
+.form-card{
+  border:1px solid #e5e7eb;
+  border-radius:15px;
+  padding:25px;
+}
+
+.form-card h3{
+  margin-bottom:25px;
+}
+
+.form-card input,
+.form-card select{
+  width:100%;
+  height:55px;
+  border:1px solid #dbe1ea;
+  border-radius:10px;
+  padding:0 15px;
+  margin-bottom:18px;
+}
+
+.full-section{
+  margin-top:25px;
+}
+
+.full-section label{
+  display:block;
+  margin-bottom:12px;
+  font-weight:600;
+}
+
+textarea{
+  width:100%;
+  border:1px solid #dbe1ea;
+  border-radius:12px;
+  padding:15px;
+  resize:none;
+}
+
+.checkboxes{
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.submit-btn{
+  width:100%;
+  margin-top:30px;
+  height:60px;
+  border:none;
+  border-radius:12px;
+  background:#2563eb;
+  color:white;
+  font-size:18px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.help-card{
+  margin-top:50px;
+  background:linear-gradient(
+    135deg,
+    #e8f1ff,
+    #dbeafe
+  );
+
+  border-radius:25px;
+  padding:40px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.help-content h2{
+  font-size:38px;
+  margin-bottom:15px;
+}
+
+.help-content p{
+  color:#475569;
+  margin-bottom:25px;
+}
+
+.contact-item{
+  margin-bottom:15px;
+  font-weight:500;
+}
+
+.help-image img{
+  width:250px;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .help-card{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .help-image{
+    margin-top:20px;
+  }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .quote-page{
+    padding:40px 20px;
+  }
+
+  .quote-header h1{
+    font-size:34px;
+  }
+
+  .quote-form{
+    padding:20px;
+  }
+
+  .help-content h2{
+    font-size:28px;
+  }
+
+  .help-image img{
+    width:180px;
+  }
+}

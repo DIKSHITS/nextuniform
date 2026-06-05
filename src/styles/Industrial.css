@@ -1,0 +1,162 @@
+.industrial-page {
+  background: #f8fafc;
+}
+
+/* Banner */
+
+.industrial-banner {
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.banner-overlay {
+  height: 100%;
+  background: rgba(0, 10, 35, 0.75);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0 8%;
+  color: white;
+}
+
+.breadcrumb {
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.banner-overlay h1 {
+  font-size: 58px;
+  margin-bottom: 15px;
+}
+
+.banner-text {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.banner-features {
+  display: flex;
+  gap: 35px;
+  flex-wrap: wrap;
+}
+
+/* Tabs */
+
+.tabs {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+
+  padding: 40px 8%;
+}
+
+.tabs button {
+  border: 1px solid #ddd;
+  background: white;
+
+  padding: 12px 22px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.active-tab {
+  background: #0f6fff !important;
+  color: white;
+}
+
+/* Products */
+
+.product-grid {
+  padding: 0 8% 80px;
+
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+
+  padding: 20px;
+  text-align: center;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.product-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: contain;
+}
+
+.product-card h3 {
+  margin: 20px 0 10px;
+  color: #111827;
+}
+
+.product-card p {
+  color: #6b7280;
+  margin-bottom: 18px;
+}
+
+.product-card button {
+  border: none;
+  background: transparent;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Tablet */
+
+@media(max-width:992px){
+
+  .product-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  .banner-overlay h1{
+    font-size:42px;
+  }
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+  .product-grid{
+    grid-template-columns:1fr;
+  }
+
+  .banner-overlay h1{
+    font-size:34px;
+  }
+
+  .banner-features{
+    gap:15px;
+  }
+}
+.price {
+  display: block;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.view-btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.view-btn:hover {
+  color: #0f6fff;
+}

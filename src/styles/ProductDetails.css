@@ -1,0 +1,131 @@
+.product-details {
+  padding: 60px 8%;
+  background: #fff;
+}
+
+.product-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.product-gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.thumbs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.thumbs img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.main-image {
+  flex: 1;
+  background: #f5f7fa;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.main-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: contain;
+}
+
+.product-info h1 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+
+.product-info h2 {
+  color: #0f6fff;
+  margin-bottom: 20px;
+}
+
+.product-info p {
+  color: #666;
+  line-height: 1.8;
+}
+
+.product-info ul {
+  margin: 20px 0;
+}
+
+.product-info li {
+  margin-bottom: 10px;
+}
+
+.sizes {
+  display: flex;
+  gap: 10px;
+  margin: 25px 0;
+}
+
+.sizes button {
+  padding: 12px 18px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+}
+
+.qty-box {
+  display: flex;
+  width: fit-content;
+  margin-bottom: 25px;
+}
+
+.qty-box button {
+  width: 45px;
+  height: 45px;
+}
+
+.qty-box span {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.whatsapp-btn,
+.quote-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 15px 25px;
+  border-radius: 8px;
+}
+
+.whatsapp-btn {
+  background: #25d366;
+  color: white;
+  border: none;
+}
+
+.quote-btn {
+  border: 2px solid #0f6fff;
+  background: white;
+  color: #0f6fff;
+}
+
+@media(max-width:992px){
+  .product-top{
+    grid-template-columns:1fr;
+  }
+}

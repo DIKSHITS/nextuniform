@@ -1,0 +1,184 @@
+.team-section {
+  padding: 80px 8%;
+  background: #f8fafc;
+}
+
+/* Trusted */
+
+.trusted-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.trusted-section h3 {
+  color: #1f2937;
+  margin-bottom: 30px;
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.brands span {
+  font-size: 32px;
+  font-weight: 700;
+  color: #374151;
+}
+
+/* How It Works */
+
+.works-card {
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.works-card h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #0f172a;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.step {
+  text-align: center;
+  max-width: 140px;
+}
+
+.icon {
+  width: 65px;
+  height: 65px;
+  background: #eef4ff;
+  color: #2563eb;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  margin: auto auto 15px;
+}
+
+.step h4 {
+  margin-bottom: 10px;
+}
+
+.step p {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.arrow {
+  font-size: 32px;
+  color: #2563eb;
+}
+
+/* CTA Banner */
+
+.cta-banner {
+  background: linear-gradient(
+    135deg,
+    #00112d,
+    #002e7a
+  );
+
+  border-radius: 24px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 50px;
+  overflow: hidden;
+}
+
+.cta-content {
+  color: white;
+  max-width: 500px;
+}
+
+.cta-content h2 {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  color: #d6e3ff;
+  margin-bottom: 25px;
+}
+
+.cta-content button {
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.cta-image img {
+  width: 280px;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+
+  .steps {
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .cta-banner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-image img {
+    margin-top: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .brands {
+    gap: 20px;
+  }
+
+  .brands span {
+    font-size: 24px;
+  }
+
+  .works-card {
+    padding: 25px;
+  }
+
+  .cta-content h2 {
+    font-size: 28px;
+  }
+
+  .cta-banner {
+    padding: 30px;
+  }
+
+  .cta-image img {
+    width: 220px;
+  }
+}
