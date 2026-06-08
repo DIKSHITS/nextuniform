@@ -93,31 +93,27 @@ export default function CareerPage() {
     <div className="career-page">
       {/* HERO */}
 
-      <section
-        className="hero"
-        style={{
-          backgroundImage: `url(${teamImg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center"
-        }}
-      >
-        <div className="hero-content">
-          <h1>
-            Build Your Career
-            <br />
-            <span>With NextUniform</span>
-          </h1>
+   <section
+  className="career-hero"
+  style={{
+    backgroundImage: `url(${teamImg})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="hero-content">
+    <h1>
+      Build Your Career
+      <br />
+      <span>With NextUniform</span>
+    </h1>
 
-          <p>
-            Join a passionate team where innovation,
-            creativity and growth drive success every day.
-          </p>
-
-          <div className="hero-buttons">
-          
-          </div>
-        </div>
-      </section>
+    <p>
+      Join a passionate team where innovation,
+      creativity and growth drive success every day.
+    </p>
+  </div>
+</section>
 
       {/* STATS */}
 

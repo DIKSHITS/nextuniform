@@ -1,3 +1,5 @@
+// src/data/corporateProducts.js
+
 const productImages = [
   require("../asstes/58.png"),
   require("../asstes/59.png"),
@@ -37,43 +39,235 @@ const productImages = [
   require("../asstes/93.png"),
   require("../asstes/94.png"),
   require("../asstes/95.png"),
-  require("../asstes/96.png")
+  require("../asstes/96.png"),
 ];
 
-const categoryRanges = [
-  { category: "Formal Shirts", start: 0, end: 9 },
-  { category: "Blazers", start: 10, end: 18 },
-  { category: "Business Suits", start: 19, end: 27 },
-  { category: "Executive Wear", start: 28, end: 37 },
-  { category: "Accessories", start: 38, end: 46 }
-];
+const productDetails = [
+  {
+    title: "Olive Green Formal Shirt",
+    price: "₹1,499",
+    category: "Formal Shirts",
+  },
+  {
+    title: "Navy Blue Formal Shirt",
+    price: "₹1,499",
+    category: "Formal Shirts",
+  },
+  {
+    title: "Light Pink Formal Shirt",
+    price: "₹1,499",
+    category: "Formal Shirts",
+  },
+  {
+    title: "Lavender Formal Shirt",
+    price: "₹1,499",
+    category: "Formal Shirts",
+  },
+  {
+    title: "Rust Brown Formal Shirt",
+    price: "₹1,499",
+    category: "Formal Shirts",
+  },
+  {
+    title: "Teal Formal Shirt",
+    price: "₹1,499",
+    category: "Formal Shirts",
+  },
+  {
+    title: "Beige Formal Trouser",
+    price: "₹1,299",
+    category: "Formal Trousers",
+  },
+  {
+    title: "Charcoal Formal Trouser",
+    price: "₹1,299",
+    category: "Formal Trousers",
+  },
+  {
+    title: "Grey Formal Trouser",
+    price: "₹1,299",
+    category: "Formal Trousers",
+  },
+  {
+    title: "Cream Formal Trouser",
+    price: "₹1,299",
+    category: "Formal Trousers",
+  },
 
-const categoryLabels = {
-  "Formal Shirts": "Formal Shirt",
-  "Blazers": "Corporate Blazer",
-  "Business Suits": "Business Suit",
-  "Executive Wear": "Executive Wear",
-  "Accessories": "Corporate Accessory"
-};
+  {
+    title: "Brown Corporate Blazer",
+    price: "₹2,399",
+    category: "Blazers",
+  },
+  {
+    title: "Navy Corporate Suit",
+    price: "₹2,499",
+    category: "Business Suits",
+  },
+  {
+    title: "Beige Corporate Suit",
+    price: "₹2,499",
+    category: "Business Suits",
+  },
+  {
+    title: "Peach Corporate Blazer",
+    price: "₹2,399",
+    category: "Blazers",
+  },
+  {
+    title: "Black Executive Suit",
+    price: "₹2,499",
+    category: "Business Suits",
+  },
+  {
+    title: "Black Waistcoat Suit",
+    price: "₹2,299",
+    category: "Business Suits",
+  },
+  {
+    title: "Navy Blue Business Suit",
+    price: "₹2,499",
+    category: "Business Suits",
+  },
+  {
+    title: "Royal Blue Waistcoat Suit",
+    price: "₹2,299",
+    category: "Business Suits",
+  },
+  {
+    title: "Grey Executive Blazer",
+    price: "₹2,399",
+    category: "Blazers",
+  },
+
+  {
+    title: "Grey Business Suit",
+    price: "₹2,499",
+    category: "Business Suits",
+  },
+  {
+    title: "Forest Green Business Suit",
+    price: "₹2,499",
+    category: "Business Suits",
+  },
+  {
+    title: "Green Waistcoat Suit",
+    price: "₹2,299",
+    category: "Business Suits",
+  },
+  {
+    title: "Grey Waistcoat Suit",
+    price: "₹2,299",
+    category: "Business Suits",
+  },
+  {
+    title: "Double Breasted Grey Suit",
+    price: "₹2,499",
+    category: "Business Suits",
+  },
+  {
+    title: "Sky Blue Business Suit",
+    price: "₹2,499",
+    category: "Business Suits",
+  },
+  {
+    title: "Corporate Reception Uniform",
+    price: "₹1,999",
+    category: "Executive Wear",
+  },
+  {
+    title: "Executive Skirt Suit",
+    price: "₹2,199",
+    category: "Executive Wear",
+  },
+  {
+    title: "Beige Reception Uniform",
+    price: "₹1,999",
+    category: "Executive Wear",
+  },
+
+  {
+    title: "Navy Logo Polo T-Shirt",
+    price: "₹1,599",
+    category: "Executive Wear",
+  },
+  {
+    title: "White Corporate Polo T-Shirt",
+    price: "₹1,599",
+    category: "Executive Wear",
+  },
+  {
+    title: "White Premium Polo T-Shirt",
+    price: "₹1,599",
+    category: "Executive Wear",
+  },
+  {
+    title: "Black Logo Polo T-Shirt",
+    price: "₹1,599",
+    category: "Executive Wear",
+  },
+  {
+    title: "Black Corporate Polo T-Shirt",
+    price: "₹1,599",
+    category: "Executive Wear",
+  },
+  {
+    title: "Blue Executive Polo T-Shirt",
+    price: "₹1,599",
+    category: "Executive Wear",
+  },
+  {
+    title: "Green Corporate Polo T-Shirt",
+    price: "₹1,599",
+    category: "Executive Wear",
+  },
+  {
+    title: "Dark Green Premium Polo T-Shirt",
+    price: "₹1,599",
+    category: "Executive Wear",
+  },
+  {
+    title: "Navy Premium Polo T-Shirt",
+    price: "₹1,599",
+    category: "Executive Wear",
+  },
+  {
+    title: "White Executive Polo T-Shirt",
+    price: "₹1,599",
+    category: "Executive Wear",
+  },
+];
 
 export const corporateProducts = productImages.map((image, index) => {
   const nextOne = productImages[(index + 1) % productImages.length];
   const nextTwo = productImages[(index + 2) % productImages.length];
-  const categoryEntry = categoryRanges.find(
-    (range) => index >= range.start && index <= range.end
-  );
-  const category = categoryEntry ? categoryEntry.category : "Formal Shirts";
-  const titleIndex = categoryEntry
-    ? String(index - categoryEntry.start + 1).padStart(2, "0")
-    : "01";
+
+  const product =
+    productDetails[index] || {
+      title: `Corporate Product ${index + 1}`,
+      price: "₹1,999",
+      category: "Corporate Wear",
+    };
 
   return {
     id: 201 + index,
+
     image,
+
     gallery: [image, nextOne, nextTwo],
-    title: `${categoryLabels[category]} ${titleIndex}`,
-    desc: "Professional corporate wear designed for modern teams",
-    price: "₹2,499",
-    category
+
+    title: product.title,
+
+    desc:
+      "Premium corporate wear designed for professionalism, comfort and modern workplace environments.",
+
+    price: product.price,
+
+    category: product.category,
   };
 });
+
+export const getCorporateProductById = (id) =>
+  corporateProducts.find((product) => product.id === Number(id));
+
+export default corporateProducts;

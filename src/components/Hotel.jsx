@@ -6,19 +6,19 @@ import banner from "../asstes/hotel.png";
 import { hotelProducts } from "../data/hotelProducts";
 
 function Hotel() {
-  const products = hotelProducts;
+  const products = Array.isArray(hotelProducts)
+    ? hotelProducts
+    : [];
 
   return (
     <section className="industrial-page">
-
       <div
         className="industrial-banner"
         style={{
-          backgroundImage: `url(${banner})`
+          backgroundImage: `url(${banner})`,
         }}
       >
         <div className="banner-overlay">
-
           <p className="breadcrumb">
             Home &gt; Hotel
           </p>
@@ -36,50 +36,43 @@ function Hotel() {
             <span>✓ Bulk Order Support</span>
           </div>
 
-          <div className="banner-buttons">
-            <Link to="/" className="primary-btn">Explore Categories →</Link>
-            <Link to="/quote" className="secondary-btn">Get a Quote</Link>
-          </div>
-
+  
         </div>
       </div>
 
-      {/* tabs removed per request */}
-
       <div className="product-grid">
+        {products.length > 0 ? (
+          products.map((item) => (
+            <div className="product-card" key={item.id}>
+              <img
+                src={item.image}
+                alt={item.title}
+                loading="lazy"
+              />
 
-        {products.map((item) => (
-          <div
-            className="product-card"
-            key={item.id}
-          >
+              <h3>{item.title}</h3>
 
-            <img
-              src={item.image}
-              alt={item.title}
-            />
+              <p>{item.desc}</p>
 
-            <h3>{item.title}</h3>
+              <span className="price">
+                {item.price}
+              </span>
 
-            <p>{item.desc}</p>
-
-            <span className="price">
-              {item.price}
-            </span>
-
-            <Link
-              to={`/product/${item.id}`}
-              className="view-btn"
-              state={{ product: item }}
-            >
-              View Collection →
-            </Link>
-
-          </div>
-        ))}
-
+              <Link
+                to={`/product/${item.id}`}
+                className="view-btn"
+                state={{ product: item }}
+              >
+                View Collection →
+              </Link>
+            </div>
+          ))
+        ) : (
+          <h2 style={{ textAlign: "center", width: "100%" }}>
+            No Products Found
+          </h2>
+        )}
       </div>
-
     </section>
   );
 }

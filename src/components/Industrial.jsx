@@ -8,20 +8,14 @@ import { products } from "../data/industrialProducts";
 function Industrial() {
   return (
     <section className="industrial-page">
-
-      {/* Banner */}
-
       <div
         className="industrial-banner"
         style={{
-          backgroundImage: `url(${banner})`
+          backgroundImage: `url(${banner})`,
         }}
       >
         <div className="banner-overlay">
-
-          <p className="breadcrumb">
-            Home &gt; Industrial
-          </p>
+          <p className="breadcrumb">Home &gt; Industrial</p>
 
           <h1>Industrial Uniforms</h1>
 
@@ -35,34 +29,19 @@ function Industrial() {
             <span>✓ Custom Made</span>
             <span>✓ Bulk Order Support</span>
           </div>
-
         </div>
       </div>
 
-      {/* Categories */}
-
-      {/* Products */}
-
       <div className="product-grid">
-
-        {products.map((item) => (
-          <div
-            className="product-card"
-            key={item.id}
-          >
-
-            <img
-              src={item.image}
-              alt={item.title}
-            />
+        {products?.map((item) => (
+          <div className="product-card" key={item.id}>
+            <img src={item.image} alt={item.title} />
 
             <h3>{item.title}</h3>
 
             <p>{item.desc}</p>
 
-            <span className="price">
-              {item.price}
-            </span>
+            <span className="price">{item.price}</span>
 
             <Link
               to={`/product/${item.id}`}
@@ -71,12 +50,9 @@ function Industrial() {
             >
               View Collection →
             </Link>
-
           </div>
         ))}
-
       </div>
-
     </section>
   );
 }
